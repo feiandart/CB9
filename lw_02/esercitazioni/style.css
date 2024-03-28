@@ -1,0 +1,387 @@
+/* GENERIC START */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1e9e9ff;
+    font-family: "Nunito", sans-serif;
+}
+
+main {
+    position: relative;
+    top: 5em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* GENERIC END */
+
+
+
+/* MAIN HEADER START */
+#main-header {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    background-color: #f1e9e9ff;
+}
+
+#main-header h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #522929;
+    font-size: 1.9em;
+    font-family: "Inder", sans-serif;
+    border: 1px solid #522929;
+    padding: 0.2em 0.6em;
+}
+
+#main-header ul {
+    display: flex;
+    margin-top: 0.7em;
+    list-style-type: none;
+}
+
+#main-header a {
+    text-decoration: none;
+    color: #5e1818;
+    transition: all 1s ease;
+    padding: 0em 0.5em;
+}
+
+#main-header a:hover {
+    color: #913e3e;
+    border-bottom: 1px dashed #000;
+    background-color: #dfcaca;
+    border-radius: 0.5em;
+}
+/* MAIN HEADER END  */
+
+
+
+/* HERO START */
+.hero {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('assets/img/background.webp') 100% center;
+    padding: 2em;
+}
+
+.hero h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ccb8b8;
+    font-size: 1.4em;
+    margin: 1em;
+    font-family: "Inder", sans-serif;
+    border: 1px dashed #bda0a0;
+    padding: 0.2em 0.6em;
+    border-radius: 0.1em;
+    text-shadow: #000 1px 1px;
+    box-shadow: #461919 0px 0px 20px;
+}
+
+.titoletto {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    background-color: #d3bdbd;
+    opacity: 50%;
+}
+
+.descrizione {
+    margin-top: 1em;
+    color: #fff;
+    text-shadow: #000 1px 1px;
+}
+/* HERO END */
+
+
+
+/* GALLERY START */
+.gallery {
+    padding-top: 2em;
+}
+
+h2 {
+    text-align: center;
+    margin: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5e1818;
+    font-size: 1.4em;
+    margin: 1em;
+    font-family: "Inder", sans-serif;
+}
+
+.galleryshow {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.gallerycard {
+    width: 50%;
+    margin-bottom: -0.4em;
+}
+
+.gallerycard img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.gallerylogo {
+    display: flex;
+    background: url('assets/img/gallerybanner.webp');
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 1px 1px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.gallerylogo span { 
+    display: inline-block;
+    background-color: rgba(0,0,0,0.6);
+    width:100%;
+    padding: 1em;
+}
+/* GALLERY END */
+
+
+
+/* SERVICES SECTION START */
+.services {
+    padding-top: 2em;
+}
+
+.services-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 1em;
+}
+
+.services-item {
+    text-align: center;
+    padding: 2em 1em;
+    margin: 1em;
+    border-radius: 3em;
+    background-color: #e0cdcd;
+    box-shadow: #5e1818 1px 1px 10px;
+}
+
+.services-item img {
+    border-radius: 50%;
+    box-shadow: #000 1px 1px 10px;
+}
+
+.services-item h3 {
+    border-bottom: 1px dashed #000;
+    margin: 0.5em;
+}
+
+.services-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 2em 1em;
+}
+
+.services-buttons div {
+    width: 50%;
+    margin: 0.2em;
+}
+
+.services-buttons a {
+    display: inline-block;
+    background-color: #a18987;
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    color: #e0cdcd;
+    transition: all 1s ease;
+    border-radius: 0.7em;
+    padding: 0.3em 0.7em;
+}
+
+.services-buttons a:hover {
+    background-color: #e0cdcd;
+    color: #a18987;
+} 
+
+.services p {
+    text-align: center;
+    padding: 0em 2em;
+}
+/* SERVICES SECTION END */
+
+
+
+/* FORM SECTION START */
+.form {
+    margin-top: 2em;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    background-color: #a18987;
+}
+
+.form h2 {
+    text-align: center;
+    color: #e0cdcd;
+    border-bottom: 1px dotted #e0cdcd;
+    padding-bottom: 0.5em;
+    text-shadow: #000 2px 2px;
+}
+
+.form-content {
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.form img {
+    text-align: center;
+}
+
+.form-image img {
+    width: 100%;
+    height: auto;
+}
+
+.form-first {
+    display: flex;
+    justify-content: center;
+    padding: 0em 1em;
+    gap: 0.5em;
+}
+
+.form-second {
+    padding: 1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    border: none;
+    background-color: #e0cdcd;
+    outline: none;
+}
+
+textarea {
+    height: 10em;
+    padding: 2em;
+}
+
+.form-submit {
+    padding: 0em 1em;
+
+}
+
+.form-submit input {
+    font-variant: small-caps;
+    font-size: 1em;
+    width:100%;
+    transition: all 1s ease;
+    background-color: #e0cdcd;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-submit input:hover {
+    background-color: #ffffff;
+}
+/* FORM SECTION END */
+
+
+/* CONTACTS SECTION START */
+.contacts {
+    margin-top: 7.5em;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons i {
+    opacity: 50%;
+    transition: all 1s ease;
+    padding: 0.2em 0.3em;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    opacity: 100%;
+    background-color: #ccb8b8;
+    border-radius: 25%;
+}
+
+.footnotes {
+    padding: 1em 2em 2em 2em;
+    text-align: center;
+    font-size: 0.8em;
+}
+/* CONTACTS SECTION END */
+
+
+
+/* @MEDIA QUERY FOR DESKTOP START */
+@media only screen and (min-width:767px) {
+    #main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1em;
+    }
+    .galleryshow {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .services-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .services-item {
+        width: 30%;
+    }
+    .services-buttons a {
+        font-size: 2em;
+    }
+    .form-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-content {
+        padding: 40px;
+        width: 50%;
+    }
+
+    .form-image {
+        width: 50%;
+    }
+    .form-submit input {
+        font-size: 1.3em;
+    }
+}
+/* @MEDIA QUERY FOR DESKTOP END */
