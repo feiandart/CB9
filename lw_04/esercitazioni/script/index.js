@@ -5,7 +5,7 @@
 let userBirth = prompt ("Inserisci la tua età:");
 
 if (userBirth === "01/01/1990") {
-    console.log("Buon compleanno! 🎁 ");
+    console.log("Buon compleanno! 🎁");
 } else {
     console.log("Non è ancora il tuo compleanno!");
 } 
@@ -41,7 +41,7 @@ const toDoList = [
     "Ora di andare a dormire, buonanotte!"
 ]
 
-for (let list = 0; list < dailyHours.length; list++) {
+for (let list = 0; list > dailyHours.length; list++) {
     console.log(dailyHours[list] + ") " + toDoList[list]);
 } 
 
