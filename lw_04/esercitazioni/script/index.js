@@ -55,20 +55,15 @@ let firstNumber = parseInt(prompt ("Inserisci il primo numero:"));
 let mathSign = prompt ("Inserisci il tipo di operazione (+, -, *, /):");
 let secondNumber = parseInt(prompt ("Inserisci il secondo numero:"));
 
-const addizione = firstNumber + secondNumber;
-const sottrazione = firstNumber - secondNumber;
-const moltiplicazione = firstNumber * secondNumber;
-const divisione = firstNumber / secondNumber;
-
 
 if (mathSign == "+") {
-    alert("Il risultato è: " + addizione);
+    alert("Il risultato è: " + (firstNumber + secondNumber));
 } else if (mathSign == "-") {
-    alert("Il risultato è: " + sottrazione);
+    alert("Il risultato è: " + (firstNumber - secondNumber));
 } else if (mathSign == "*") {
-    alert("Il risultato è: " + moltiplicazione);
+    alert("Il risultato è: " + (firstNumber * secondNumber));
 } else if (mathSign == "/") {
-    alert("Il risultato è: " + divisione);
+    alert("Il risultato è: " + (firstNumber / secondNumber));
 } else {
     alert("Operazione non valida! Aggiorna e ricomincia.");
 }
