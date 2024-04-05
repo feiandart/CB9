@@ -1,4 +1,4 @@
-/* 
+ 
 // ----------- ESERCIZIO #1 ----------- //
 // già incluso di esercizio avanzato #1
 
@@ -43,7 +43,7 @@ const toDoList = [
 
 for (let list = 0; list < dailyHours.length; list++) {
     console.log(dailyHours[list] + ") " + toDoList[list]);
-} */
+} 
 
 
 
