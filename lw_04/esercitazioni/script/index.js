@@ -1,4 +1,4 @@
-
+/* 
 // ----------- ESERCIZIO #1 ----------- //
 // già incluso di esercizio avanzato #1
 
@@ -43,4 +43,32 @@ const toDoList = [
 
 for (let list = 0; list < dailyHours.length; list++) {
     console.log(dailyHours[list] + ") " + toDoList[list]);
+} */
+
+
+
+// ----------- ESERCIZIO AVANZATO #2 ----------- //
+// hai detto di essere creativi, quindi l'ho fatta interamente interattiva senza console.log
+
+alert ("Ciao! Io sono la tua calcolatrice. Sei pronto a divertirti?");
+let firstNumber = parseInt(prompt ("Inserisci il primo numero:"));
+let mathSign = prompt ("Inserisci il tipo di operazione (+, -, *, /):");
+let secondNumber = parseInt(prompt ("Inserisci il secondo numero:"));
+
+const addizione = firstNumber + secondNumber;
+const sottrazione = firstNumber - secondNumber;
+const moltiplicazione = firstNumber * secondNumber;
+const divisione = firstNumber / secondNumber;
+
+
+if (mathSign == "+") {
+    alert("Il risultato è: " + addizione);
+} else if (mathSign == "-") {
+    alert("Il risultato è: " + sottrazione);
+} else if (mathSign == "*") {
+    alert("Il risultato è: " + moltiplicazione);
+} else if (mathSign == "/") {
+    alert("Il risultato è: " + addizione);
+} else {
+    alert("Operazione non valida! Aggiorna e ricomincia.");
 }
