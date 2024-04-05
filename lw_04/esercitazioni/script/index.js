@@ -68,7 +68,7 @@ if (mathSign == "+") {
 } else if (mathSign == "*") {
     alert("Il risultato è: " + moltiplicazione);
 } else if (mathSign == "/") {
-    alert("Il risultato è: " + addizione);
+    alert("Il risultato è: " + divisione);
 } else {
     alert("Operazione non valida! Aggiorna e ricomincia.");
 }
