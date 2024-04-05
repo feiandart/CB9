@@ -1,6 +1,6 @@
 
 // ----------- ESERCIZIO #1 ----------- //
-// già incluso di esercizio avanzato #3
+// già incluso di esercizio avanzato #1
 
 let userBirth = prompt ("Inserisci la tua età:");
 
