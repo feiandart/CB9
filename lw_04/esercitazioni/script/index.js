@@ -41,10 +41,17 @@ const toDoList = [
     "Ora di andare a dormire, buonanotte!"
 ]
 
-for (let list = 0; list > dailyHours.length; list++) {
+/* dailyHours.reverse();
+toDoList.reverse(); */ // a ritroso metodo #1 
+
+for (let list = 0; list < dailyHours.length; list++) {
     console.log(dailyHours[list] + ") " + toDoList[list]);
 } 
 
+/* for (let list = dailyHours.length - 1; list >= 0; list--) {
+    console.log(dailyHours[list] + ") " + toDoList[list]);
+} 
+ */ // per farlo a ritroso metodo #2
 
 
 // ----------- ESERCIZIO AVANZATO #2 ----------- //
@@ -66,4 +73,4 @@ if (mathSign == "+") {
     alert("Il risultato è: " + (firstNumber / secondNumber));
 } else {
     alert("Operazione non valida! Aggiorna e ricomincia.");
-}
+} 
