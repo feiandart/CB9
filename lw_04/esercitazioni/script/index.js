@@ -50,8 +50,7 @@ for (let list = 0; list < dailyHours.length; list++) {
 
 /* for (let list = dailyHours.length - 1; list >= 0; list--) {
     console.log(dailyHours[list] + ") " + toDoList[list]);
-} 
- */ // per farlo a ritroso metodo #2
+}  */ // per farlo a ritroso metodo #2
 
 
 // ----------- ESERCIZIO AVANZATO #2 ----------- //
