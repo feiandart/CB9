@@ -1,6 +1,6 @@
 // !! ----- ESERCIZIO #1 ----- !! //
 
-/* function vowelCount(yourSentence) {
+function vowelCount(yourSentence) {
     let vocals = { a: 0, e: 0, i: 0, o: 0, u: 0 };
     for (let characters of yourSentence) {
         if ('aeiouàèéìòù'.includes(characters)) {
@@ -13,31 +13,31 @@
 
 let yourSentence = prompt("Dimmi una frase e ti conto le vocali!");
 let countResult = vowelCount(yourSentence);
-alert(countResult); */
+alert(countResult);
 
 
 
 // !! ----- ESERCIZIO #2 ----- !! //
 
-/* function maxNum(totalNums) {
+function maxNum(totalNums) {
     for(num in totalNums) {
         return Math.max(...totalNums.map(totalNums => totalNums));
     }
 }
 
-const num1 = prompt("Inserisci il primo numero:");
-const num2 = prompt("Inserisci il secondo numero:");
-const num3 = prompt("Inserisci il terzo numero:");
-const totalNums = [num1, num2, num3]
-let result = maxNum(totalNums);
+const firstNum = prompt("Inserisci il primo numero:");
+const secondNum = prompt("Inserisci il secondo numero:");
+const thirdNum = prompt("Inserisci il terzo numero:");
+const totalNums = [firstNum, secondNum, thirdNum]
+let higherNum = maxNum(totalNums);
 
-console.log("Il numero più alto è:", result); */
+console.log("Il numero più alto è:", higherNum);
 
 
 
 // !! ----- ESERCIZIO AVANZATO #1 ----- !! //
 
-/* function addSalary(selectSalary) {
+function addSalary(selectSalary) {
     const raiseSalary = selectSalary.map(person => {
         return { ...person, salario: person.salario * 1.1 };
     })
@@ -52,4 +52,42 @@ const people = [
 let selectSalary = people.filter(person => (person.salario < 3000));
 let updatedSalary = addSalary(selectSalary);
 
-console.log(updatedSalary); */
+console.log(updatedSalary);
+
+
+
+// !! ----- ESERCIZIO AVANZATO #2 ----- !! //
+
+function calculator(num1, num2, mathSign) {
+
+    const addition = (num1, num2) => num1 + num2;
+    const substraction = (num1, num2) => num1 - num2;
+    const multiplication = (num1, num2) => num1 * num2;
+    const division = (num1, num2) => num1 / num2;
+
+    switch(mathSign) {
+        case "+" :
+            operation = addition(num1, num2);
+            break;
+        case "-" :
+            operation = substraction(num1, num2);
+            break;
+        case "*" :
+            operation = multiplication(num1, num2);
+            break;
+        case "/" :
+            operation = division(num1, num2);
+        default :
+            alert("Non so cosa mi stai chiedendo... Sicuro di star usando i giusti simboli o numeri?");
+    }
+
+    return operation;
+}
+
+alert("Ciao! Sono la tua calcolatrice di fiducia.");
+let num1 = parseInt(prompt("Inserisci il primo numero:"));
+let num2 = parseInt(prompt("Inserisci il secondo numero:"));
+let mathSign = prompt("Inserisci il tipo di operazione:");
+let result = calculator(num1, num2, mathSign);
+
+alert("Il tuo risultato è: " + result);
