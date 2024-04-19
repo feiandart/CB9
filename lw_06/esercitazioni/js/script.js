@@ -1,6 +1,6 @@
 // !! ----- ESERCIZIO #1 ----- !! //
 
-function averageNum(nums) {
+/* function averageNum(nums) {
         const addition = (nums) => nums[0] + nums[1] + nums[2];
         const division = (addition) => addition / nums.length;
 
@@ -18,7 +18,23 @@ const thirdNum = parseInt(prompt("Inserisci il terzo numero:"));
 const nums = [firstNum, secondNum, thirdNum];
 let result = averageNum(nums);
 
-alert(result);
+alert(result); */
 
+
+
+// !! ----- ESERCIZIO #2 ----- !! //
+
+/* const imgGen = () => {
+    const imgEl = document.createElement('img');
+
+    imgEl.src = "https://picsum.photos/400/400";
+    imgEl.alt = "Questa è un'immagine che cambia ogni volta che la pagina si aggiorna.";
+
+    return imgEl;
+}
+
+const rootEl = document.querySelector(".root");
+
+rootEl.append(imgGen()); */
 
 
