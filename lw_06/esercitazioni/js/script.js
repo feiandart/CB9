@@ -38,3 +38,17 @@ const rootEl = document.querySelector(".root");
 rootEl.append(imgGen()); */
 
 
+// !! ----- ESERCIZIO #3 ----- !! //
+const mainTitle = document.querySelector(".mainTitle");
+
+mainTitle.addEventListener("click", () => {
+    const color = "white";
+    const colorBg = "black";
+    const borderRadius = "2em";
+    const padding = "0em 2em";
+
+    mainTitle.style.backgroundColor = colorBg;
+    mainTitle.style.color = color;
+    mainTitle.style.borderRadius = borderRadius;
+    mainTitle.style.padding = padding;
+ });
