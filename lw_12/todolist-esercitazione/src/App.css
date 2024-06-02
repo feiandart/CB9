@@ -1,0 +1,65 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #000;
+  text-align: right;
+  margin:0;
+  margin-right: 0.3em;
+  font-size: 3em;
+}
+
+.todolist, .groceries {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  max-width: 350px;
+  background-color: #fdfdfd;
+  box-shadow: 0px 0px 15px #889fa0;
+  padding: 20px;
+}
+
+h3 {
+  text-align: left;
+  margin-left: 1em;
+  text-decoration: underline solid #f98857;
+}
+
+
+/* INPUT SEARCH + BUTTON */
+.input-box {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-box__searchbar {
+  border-radius: 10px;
+  border: 1px solid #f98857;
+  padding: 10px;
+  margin-right: 10px;
+  width: 50%;
+  outline: none;
+}
+
+.input-box__button {
+  background-color: #f98857;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.35s;
+  color: #fff;
+}
+
+.input-box__button:hover {
+  border: 1px solid #f98857;
+  background-color: #fff;
+  color: #000
+}
