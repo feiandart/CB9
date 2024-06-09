@@ -1,0 +1,13 @@
+@use "../../assets/mixins";
+@use '../../assets/variables';
+
+.mainLogo {
+    fill: variables.$primary-color;
+    width: 150px;
+    padding-left: 15px;
+    cursor: pointer;
+
+    @include mixins.desktop() {
+        width:20%;
+    }
+}

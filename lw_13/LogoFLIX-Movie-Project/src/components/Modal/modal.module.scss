@@ -1,0 +1,75 @@
+@use "../../assets/variables";
+@use "../../assets/mixins";
+
+.modalContainer {
+  @include mixins.position();
+  backdrop-filter: blur(3px);
+  z-index: 9;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  cursor: auto;
+
+  .modalWindow {
+    @include mixins.shadowBorder();
+    position: relative;
+    height: 70%;
+    width: 70%;
+    background-color: #0a0a0c;
+    padding: 20px;
+
+    img {
+      @include mixins.shadowBorder();
+      height: 40%;
+      width: 100%;
+      object-fit: cover;
+      filter: none;
+      cursor: auto;
+
+      &:hover {
+        transform: none;
+      }
+    }
+
+    .modalInfo {
+      margin-top: 10px;
+
+      .modalTitle {
+        @include mixins.title();
+        margin-bottom: 20px;
+        font-size: 1.3em;
+
+        @include mixins.desktop() {
+            font-size: 2em;
+        }
+      }
+
+      p {
+        width: 100%;
+        font-size: 0.9em;
+
+        @include mixins.desktop() {
+            font-size: 1em;
+        }
+      }
+    }
+  }
+
+  .closeButtonContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: max-content;
+    font-size: 2em;
+
+    .iconClose {
+      cursor: pointer;
+      fill: variables.$hover-color;
+      transition: all 0.5s;
+
+      &:hover {
+        fill: variables.$primary-color;
+      }
+    }
+  }
+}

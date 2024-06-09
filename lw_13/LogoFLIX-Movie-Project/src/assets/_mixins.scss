@@ -1,0 +1,60 @@
+@use "./variables";
+
+@mixin button() {
+  border: none;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.644);
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    color: variables.$hover-color;
+    background-color: #000;
+  }
+}
+
+@mixin shadowBorder() {
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px #000;
+}
+
+@mixin title() {
+    font: 100% variables.$font-title;
+    color: variables.$primary-color;
+    text-indent: 7%;
+    font-size: 2em;
+    text-decoration: underline variables.$hover-color dashed 1px;
+    border-bottom: 1px dashed rgba(255, 0, 255, 0.548);
+    margin-bottom: 10px;
+}
+
+@mixin position() {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin stroke() {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@mixin links() {
+  font: variables.$font-title;
+  font-variant: all-small-caps;
+  cursor: pointer;
+
+  &:hover {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.658);
+    text-decoration: underline 1px dotted;
+    color: variables.$hover-color;
+  }
+}
+
+@mixin desktop() {
+  @media only screen and (min-width: 760px) {
+    @content;
+  }
+}
