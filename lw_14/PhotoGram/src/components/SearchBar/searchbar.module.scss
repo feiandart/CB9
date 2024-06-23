@@ -1,0 +1,19 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+
+.searchbarContainer {
+  width: 100%;
+  overflow: hidden;
+
+  .searchbarInput {
+    height: 40px;
+    color: #fff;
+    width: 100%;
+    font-size: 1em;
+    padding-inline: 10px;
+    outline: none;
+    border: none;
+    background-color: variables.$boxes-color;
+  }
+}

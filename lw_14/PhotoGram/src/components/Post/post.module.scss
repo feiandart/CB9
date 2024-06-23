@@ -1,0 +1,66 @@
+@use "../../assets/mixins";
+
+.postContainer {
+  @include mixins.gallerydesktop();
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 75px;
+
+  .imgContainer {
+    position: relative;
+
+    .postUserInfo {
+      position: absolute;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      top: 10px;
+      left: 10px;
+      filter: drop-shadow(0px 0px 3px #000);
+      text-transform: uppercase;
+      transition: 0.35s;
+      
+
+      &:hover {
+        color: red;
+      }
+
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+
+    .postImg {
+      width: 100%;
+      min-height: 600px;
+      object-fit: cover;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.596);
+      cursor: pointer;
+    }
+
+    .postIcons {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      bottom: 20px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.603);
+      padding: 10px 20px;
+      border-radius: 20px;
+
+      .iconBook, .iconBookActive {
+        @include mixins.icons();
+        padding-right: 10px;
+      }
+
+      .iconFav, .iconFavActive {
+        @include mixins.icons();
+      }
+    }
+  }
+}

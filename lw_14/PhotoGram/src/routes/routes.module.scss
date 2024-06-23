@@ -1,0 +1,27 @@
+@use "../assets/mixins";
+@use "../assets/variables";
+
+.container {
+  @include mixins.desktop();
+  margin-block: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &:active, :hover, :visited, :link
+  {
+    color: #FFF;
+  } 
+}
+
+.containerGallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2px;
+}
+
+.containerExtra{
+    @include mixins.desktop();
+  margin-block: 80px;
+  text-align: center;
+}
